@@ -208,5 +208,17 @@ def iterative_plan_streams(all_evaluations, externals, optimistic_solve_fn, comp
             return OptSolution(stream_plan, action_plan, cost)
         if final_depth == 0:
             status = INFEASIBLE if exhausted else FAILED
+
+            ########## WARNING : CHANGES : WARNING #################################################
+
+            if status == INFEASIBLE:
+                print( "\n>>> INFEASIBLE <<<\n" )
+            elif status == FAILED:
+                print( "\n>>> FAILED <<<\n" )
+            else:
+                print( "??? Status Okay ???" )
+
+            ########################################################################################
+
             return OptSolution(status, status, cost)
     # TODO: should streams along the sampled path automatically have no optimistic value

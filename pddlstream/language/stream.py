@@ -19,9 +19,15 @@ from pddlstream.language.object import Object, OptimisticObject, UniqueOptValue,
 from pddlstream.utils import str_from_object, get_mapping, irange, apply_mapping, safe_apply_mapping, safe_zip
 
 VERBOSE_FAILURES = True
-VERBOSE_WILD = False
-DEFAULT_UNIQUE = False
-NEGATIVE_BLOCKED = True
+
+########## WARNING : CHANGED : WARNING #############################################################
+
+VERBOSE_WILD     = True  # False
+DEFAULT_UNIQUE   = True  # False
+NEGATIVE_BLOCKED = True # True
+
+####################################################################################################
+
 NEGATIVE_SUFFIX = '-negative'
 CACHE_OPTIMISTIC = True
 

@@ -176,6 +176,17 @@ def solve_abstract(problem, constraints=PlanConstraints(), stream_info={}, repla
                 domain.axioms.extend(disabled_axioms)
             stream_plan, opt_plan, cost = iterative_plan_streams(evaluations, positive_externals,
                 optimistic_solve_fn, complexity_limit, max_effort=max_effort)
+            
+            ########## WARNING : CHANGES : WARNING #################################################
+
+            print( "\n##### Optimistic Solution #####" )
+            print( stream_plan, opt_plan, cost )
+            # print( type( optimistic_solve_fn ) )
+            # print( dir( optimistic_solve_fn ) )
+            print()
+
+            ########################################################################################
+
             for axiom in disabled_axioms:
                 domain.axioms.remove(axiom)
         else:
