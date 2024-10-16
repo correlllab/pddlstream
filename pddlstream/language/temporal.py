@@ -10,10 +10,10 @@ import traceback
 
 from collections import namedtuple
 
-from pddlstream.algorithms.downward import TEMP_DIR, DOMAIN_INPUT, PROBLEM_INPUT, make_effects, \
+from aspire.pddlstream.pddlstream.algorithms.downward import TEMP_DIR, DOMAIN_INPUT, PROBLEM_INPUT, make_effects, \
     parse_sequential_domain, get_conjunctive_parts, write_pddl, make_action, make_parameters, make_object, fd_from_fact, Domain, make_effects
-from pddlstream.language.constants import DurativeAction, Fact, Not
-from pddlstream.utils import INF, ensure_dir, write, user_input, safe_rm_dir, read, elapsed_time, find_unique, safe_zip
+from aspire.pddlstream.pddlstream.language.constants import DurativeAction, Fact, Not
+from aspire.pddlstream.pddlstream.utils import INF, ensure_dir, write, user_input, safe_rm_dir, read, elapsed_time, find_unique, safe_zip
 
 PLANNER = 'tfd' # tfd | tflap | optic | tpshe | cerberus
 

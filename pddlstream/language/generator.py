@@ -1,4 +1,4 @@
-import time
+import time, sys
 try:
     from collections import Iterator
 except ImportError:
@@ -6,7 +6,7 @@ except ImportError:
 from collections import namedtuple, deque
 from itertools import count
 
-from pddlstream.utils import INF, elapsed_time
+from aspire.pddlstream.pddlstream.utils import INF, elapsed_time
 
 # TODO: indicate wild stream output just from the output form
 # TODO: depth limited and cycle-free optimistic objects

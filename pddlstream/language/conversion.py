@@ -6,11 +6,11 @@ except ImportError:
     from collections.abc import Sequence
 from itertools import product
 
-from pddlstream.language.constants import EQ, AND, OR, NOT, CONNECTIVES, QUANTIFIERS, OPERATORS, OBJECTIVES, \
+from aspire.pddlstream.pddlstream.language.constants import EQ, AND, OR, NOT, CONNECTIVES, QUANTIFIERS, OPERATORS, OBJECTIVES, \
     Head, Evaluation, get_prefix, get_args, is_parameter, is_plan, Fact, Not, Equal, Action, StreamAction, \
     FunctionAction, DurativeAction, Solution, Assignment, OptPlan, Certificate
-from pddlstream.language.object import Object, OptimisticObject
-from pddlstream.utils import str_from_object, apply_mapping
+from aspire.pddlstream.pddlstream.language.object import Object, OptimisticObject
+from aspire.pddlstream.pddlstream.utils import str_from_object, apply_mapping
 
 def replace_expression(parent, fn):
     prefix = get_prefix(parent)

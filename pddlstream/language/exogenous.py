@@ -1,14 +1,14 @@
 from collections import defaultdict
 from itertools import count
 
-from pddlstream.algorithms.common import add_fact, INTERNAL_EVALUATION
-from pddlstream.algorithms.downward import make_predicate, add_predicate, make_action, make_axiom, get_fluents
-from pddlstream.language.constants import Head, Evaluation, get_prefix, get_args
-from pddlstream.language.conversion import evaluation_from_fact, \
+from aspire.pddlstream.pddlstream.algorithms.common import add_fact, INTERNAL_EVALUATION
+from aspire.pddlstream.pddlstream.algorithms.downward import make_predicate, add_predicate, make_action, make_axiom, get_fluents
+from aspire.pddlstream.pddlstream.language.constants import Head, Evaluation, get_prefix, get_args
+from aspire.pddlstream.pddlstream.language.conversion import evaluation_from_fact, \
     is_atom, fact_from_evaluation, substitute_expression, objects_from_values
-from pddlstream.language.external import get_domain_predicates
-from pddlstream.language.generator import from_fn
-from pddlstream.language.stream import Stream
+from aspire.pddlstream.pddlstream.language.external import get_domain_predicates
+from aspire.pddlstream.pddlstream.language.generator import from_fn
+from aspire.pddlstream.pddlstream.language.stream import Stream
 
 EXOGENOUS_AXIOMS = True
 REPLACE_STREAM = True
