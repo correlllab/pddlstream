@@ -1,12 +1,12 @@
 from collections import OrderedDict
 
-from pddlstream.algorithms.downward import make_action, make_parameters, make_domain
-from pddlstream.language.constants import Not
-from pddlstream.language.conversion import pddl_from_object, substitute_expression
-from pddlstream.language.statistics import check_effort
-from pddlstream.language.function import FunctionResult
-from pddlstream.language.stream import StreamResult
-from pddlstream.utils import INF
+from aspire.pddlstream.pddlstream.algorithms.downward import make_action, make_parameters, make_domain
+from aspire.pddlstream.pddlstream.language.constants import Not
+from aspire.pddlstream.pddlstream.language.conversion import pddl_from_object, substitute_expression
+from aspire.pddlstream.pddlstream.language.statistics import check_effort
+from aspire.pddlstream.pddlstream.language.function import FunctionResult
+from aspire.pddlstream.pddlstream.language.stream import StreamResult
+from aspire.pddlstream.pddlstream.utils import INF
 
 BOUND_PREDICATE = '_bound'
 

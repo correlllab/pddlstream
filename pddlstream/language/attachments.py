@@ -2,14 +2,14 @@ import os
 import sys
 import copy
 
-from pddlstream.algorithms.advanced import get_predicates
-from pddlstream.algorithms.downward import get_literals, get_conjunctive_parts, fd_from_fact, EQ, make_object, \
+from aspire.pddlstream.pddlstream.algorithms.advanced import get_predicates
+from aspire.pddlstream.pddlstream.algorithms.downward import get_literals, get_conjunctive_parts, fd_from_fact, EQ, make_object, \
     pddl_from_instance, DEFAULT_MAX_TIME, get_cost_scale
-from pddlstream.language.object import Object
-from pddlstream.language.conversion import obj_from_pddl, substitute_fact
-from pddlstream.language.fluent import get_predicate_map, remap_certified
-from pddlstream.language.stream import Stream
-from pddlstream.utils import INF, invert_dict, get_mapping, safe_zip
+from aspire.pddlstream.pddlstream.language.object import Object
+from aspire.pddlstream.pddlstream.language.conversion import obj_from_pddl, substitute_fact
+from aspire.pddlstream.pddlstream.language.fluent import get_predicate_map, remap_certified
+from aspire.pddlstream.pddlstream.language.stream import Stream
+from aspire.pddlstream.pddlstream.utils import INF, invert_dict, get_mapping, safe_zip
 
 # Intuition: static facts about whether this state satisfies a condition
 # The state can be seen as a hidden parameter with a precondition that you are at it

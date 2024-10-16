@@ -1,15 +1,15 @@
 from collections import deque
 
-from pddlstream.language.constants import get_prefix, get_args
-from pddlstream.language.stream import Stream, StreamInfo
-from pddlstream.language.external import parse_lisp_list
-from pddlstream.language.generator import from_test, universe_test
-from pddlstream.language.conversion import list_from_conjunction, substitute_expression
+from aspire.pddlstream.pddlstream.language.constants import get_prefix, get_args
+from aspire.pddlstream.pddlstream.language.stream import Stream, StreamInfo
+from aspire.pddlstream.pddlstream.language.external import parse_lisp_list
+from aspire.pddlstream.pddlstream.language.generator import from_test, universe_test
+from aspire.pddlstream.pddlstream.language.conversion import list_from_conjunction, substitute_expression
 
 # TODO: could signal a rule by making its gen_fn just the constant True
 # TODO: could apply the rule in the initial state once but then couldn't support unexpected facts
 # TODO: prune unnecessary preconditions using rules
-from pddlstream.utils import get_mapping
+from aspire.pddlstream.pddlstream.utils import get_mapping
 
 RULES = [] # TODO: no global
 

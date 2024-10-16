@@ -2,13 +2,13 @@ from __future__ import print_function
 
 import os
 
-from pddlstream.algorithms.reorder import get_partial_orders
-from pddlstream.language.constants import EQ, get_prefix, get_args, str_from_plan, is_parameter, \
+from aspire.pddlstream.pddlstream.algorithms.reorder import get_partial_orders
+from aspire.pddlstream.pddlstream.language.constants import EQ, get_prefix, get_args, str_from_plan, is_parameter, \
     partition_facts
-from pddlstream.language.conversion import str_from_fact, evaluation_from_fact
-from pddlstream.language.function import FunctionResult
-from pddlstream.language.object import OptimisticObject
-from pddlstream.utils import clear_dir, ensure_dir, str_from_object, user_input, flatten
+from aspire.pddlstream.pddlstream.language.conversion import str_from_fact, evaluation_from_fact
+from aspire.pddlstream.pddlstream.language.function import FunctionResult
+from aspire.pddlstream.pddlstream.language.object import OptimisticObject
+from aspire.pddlstream.pddlstream.utils import clear_dir, ensure_dir, str_from_object, user_input, flatten
 
 # https://www.graphviz.org/doc/info/
 

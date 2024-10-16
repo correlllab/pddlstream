@@ -1,13 +1,13 @@
 from collections import defaultdict
 
-from pddlstream.algorithms.downward import fd_from_fact, get_conjunctive_parts, get_disjunctive_parts
-from pddlstream.language.constants import get_prefix, get_args
-from pddlstream.language.conversion import substitute_expression
-from pddlstream.language.fluent import get_predicate_map
-from pddlstream.language.function import Function
-from pddlstream.language.optimizer import UNSATISFIABLE, ConstraintStream
-from pddlstream.language.stream import Stream
-from pddlstream.utils import find_unique, get_mapping
+from aspire.pddlstream.pddlstream.algorithms.downward import fd_from_fact, get_conjunctive_parts, get_disjunctive_parts
+from aspire.pddlstream.pddlstream.language.constants import get_prefix, get_args
+from aspire.pddlstream.pddlstream.language.conversion import substitute_expression
+from aspire.pddlstream.pddlstream.language.fluent import get_predicate_map
+from aspire.pddlstream.pddlstream.language.function import Function
+from aspire.pddlstream.pddlstream.language.optimizer import UNSATISFIABLE, ConstraintStream
+from aspire.pddlstream.pddlstream.language.stream import Stream
+from aspire.pddlstream.pddlstream.utils import find_unique, get_mapping
 
 UNIVERSAL_TO_CONDITIONAL = False
 AUTOMATICALLY_NEGATE = True # TODO: fix Yang's bug

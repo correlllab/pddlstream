@@ -1,12 +1,12 @@
-from pddlstream.algorithms.downward import get_problem, task_from_domain_problem
-from pddlstream.algorithms.instantiate_task import sas_from_pddl
-from pddlstream.algorithms.scheduling.recover_streams import get_achieving_streams, extract_stream_plan
-from pddlstream.algorithms.scheduling.stream_action import get_stream_actions
-from pddlstream.algorithms.scheduling.utils import add_unsatisfiable_to_goal
-from pddlstream.algorithms.search import solve_from_task
-from pddlstream.language.constants import And
-from pddlstream.language.conversion import evaluation_from_fact
-from pddlstream.utils import flatten, INF
+from aspire.pddlstream.pddlstream.algorithms.downward import get_problem, task_from_domain_problem
+from aspire.pddlstream.pddlstream.algorithms.instantiate_task import sas_from_pddl
+from aspire.pddlstream.pddlstream.algorithms.scheduling.recover_streams import get_achieving_streams, extract_stream_plan
+from aspire.pddlstream.pddlstream.algorithms.scheduling.stream_action import get_stream_actions
+from aspire.pddlstream.pddlstream.algorithms.scheduling.utils import add_unsatisfiable_to_goal
+from aspire.pddlstream.pddlstream.algorithms.search import solve_from_task
+from aspire.pddlstream.pddlstream.language.constants import And
+from aspire.pddlstream.pddlstream.language.conversion import evaluation_from_fact
+from aspire.pddlstream.pddlstream.utils import flatten, INF
 
 # TODO: rename this to plan streams?
 

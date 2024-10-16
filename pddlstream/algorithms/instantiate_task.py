@@ -4,12 +4,12 @@ import os
 from collections import namedtuple, defaultdict, deque, Counter
 from time import time
 
-from pddlstream.algorithms.downward import get_literals, get_precondition, get_fluents, get_function_assignments, \
+from aspire.pddlstream.pddlstream.algorithms.downward import get_literals, get_precondition, get_fluents, get_function_assignments, \
     TRANSLATE_OUTPUT, parse_sequential_domain, parse_problem, task_from_domain_problem, GOAL_NAME, literal_holds, \
     get_conjunctive_parts, get_conditional_effects
-from pddlstream.algorithms.relation import Relation, compute_order, solve_satisfaction
-from pddlstream.language.constants import is_parameter
-from pddlstream.utils import flatten, apply_mapping, MockSet, elapsed_time, Verbose, safe_remove, ensure_dir, \
+from aspire.pddlstream.pddlstream.algorithms.relation import Relation, compute_order, solve_satisfaction
+from aspire.pddlstream.pddlstream.language.constants import is_parameter
+from aspire.pddlstream.pddlstream.utils import flatten, apply_mapping, MockSet, elapsed_time, Verbose, safe_remove, ensure_dir, \
     str_from_object, user_input, Profiler
 
 import pddl

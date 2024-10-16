@@ -1,12 +1,12 @@
 import time
 
-from pddlstream.algorithms.common import add_facts, add_certified, is_instance_ready, UNKNOWN_EVALUATION
-from pddlstream.algorithms.algorithm import remove_blocked
-from pddlstream.language.constants import OptPlan
-from pddlstream.language.function import FunctionResult
-from pddlstream.language.stream import StreamResult
-from pddlstream.language.conversion import is_plan, transform_action_args, replace_expression
-from pddlstream.utils import INF, safe_zip, apply_mapping, flatten, elapsed_time
+from aspire.pddlstream.pddlstream.algorithms.common import add_facts, add_certified, is_instance_ready, UNKNOWN_EVALUATION
+from aspire.pddlstream.pddlstream.algorithms.algorithm import remove_blocked
+from aspire.pddlstream.pddlstream.language.constants import OptPlan
+from aspire.pddlstream.pddlstream.language.function import FunctionResult
+from aspire.pddlstream.pddlstream.language.stream import StreamResult
+from aspire.pddlstream.pddlstream.language.conversion import is_plan, transform_action_args, replace_expression
+from aspire.pddlstream.pddlstream.utils import INF, safe_zip, apply_mapping, flatten, elapsed_time
 
 # TODO: disabled isn't quite like complexity. Stream instances below the complexity threshold might be called again
 # Well actually, if this was true wouldn't it have already been sampled on a lower level?
